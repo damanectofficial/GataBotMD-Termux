@@ -3,22 +3,41 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import moment from 'moment-timezone' 
 import fs from 'fs' 
+import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js' 
 
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰ 
 global.owner = [
-  ['593993684821', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈', true],
-  ['50498965677', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 2 💖🐈', true],
-  ['51993042301', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 3 💖🐈', true],
-  ['593959425714'],
+  ['593993684821', 'Hidayat Store - Marketing Agency 💖🐈', true],
+  ['50495086382', 'Hidayat Store - Marketing Agency 2 💖🐈', true],
+  ['51993042301', 'Hidayat Store - Marketing Agency 3 💖🐈', true],
+  ['5492914469417', 'Hidayat Store - Marketing Agency 4 💖🐈', true],
+  ['573238484181', 'Hidayat Store - Marketing Agency 5 💖🐈', true],
+  ['573208089136', 'Hidayat Store - Marketing Agency 6 💖🐈', true],
+  ['593959425714', 'Hidayat Store My Id | Digital Marketing 💖🐈', true],
+  ['5492266466080'],
   ['50495086382'],
   ['584166662765'],
   ['584163647116'],
+  ['18059196237'],
   ['593968585383'] 
 ]
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 global.mods = [] 
 global.prems = ['528451003894'], 
+  
+  
+//⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
+//Agrega el Idioma que quieres que tenga GataBot-MD
+//Add the language you want GataBot-MD to have
+//  es = Español         id = Bahasa Indonesia
+//  en = English         pt = Português 
+//  ar = عرب  
+
+global.lenguajeGB = id  //Idioma de GataBot, Ejemplo: id | en | pt...
+
+//━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
+
 
 global.APIs = { // API Prefix. 
   
@@ -88,18 +107,18 @@ global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
-global.packname = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
-global.author = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
+global.packname = 'Hidayat Store - Marketing Agency 🐈'
+global.author = 'Hidayat Store My Id'
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = '1.3.3'
+global.vs = '1.3.7'
 global.version = vs
 
-global.gt = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
+global.gt = 'Hidayat Store - Marketing Agency'
 global.gatabot = gt
 
 global.yt = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA'
@@ -111,26 +130,28 @@ global.gatadiosig = ig
 global.md = 'https://github.com/GataNina-Li/GataBot-MD'
 global.gatabot = md
 
-global.nna = 'https://chat.whatsapp.com/EzLCL8DU4NtDa1gPScN11M'
+global.nna = 'https://chat.whatsapp.com/HQxfuaDFPBQ7KvuesQoU7G'
 global.nnagrupo = nna //UPDATE GATABOT
 
-global.nn = 'https://chat.whatsapp.com/CrSfTA8r6o5FyC6ymmkLi2'
+global.nn = 'https://chat.whatsapp.com/CnsAvjHUhMw1D8y0OcfkIY'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/LK9sgW6LhxOLflkwHZndtT'
+global.nnn = 'https://chat.whatsapp.com/CdiITbXO2kdGLWBVAdqfCS'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnnt = 'https://chat.whatsapp.com/BQq6Val8KKABkOmfoA50r1'
+global.nnnt = 'https://chat.whatsapp.com/Fd1wp2c3KCG7bHybanoXbR'
 global.nnntgrupo = nnnt //Grupo 3
 
-global.nnntt = 'https://chat.whatsapp.com/Lk1E9Hdf3JKBroJheDzDfJ'
+global.nnntt = 'https://chat.whatsapp.com/G0A7GMhlyAZ2b7JVEoz1Zy'
 global.nnnttgrupo = nnntt //Grupo 4
 
-global.nnnttt = 'https://chat.whatsapp.com/BqPnmDG0QqCKN3KnfrSX9x'
+global.nnnttt = 'https://chat.whatsapp.com/JHTDXPLoW29I1rxGYnLmmH'
 global.nnntttgrupo = nnnttt //Grupo 5
 
 global.paypal = 'https://paypal.me/OficialGD'
 global.donar = paypal
+
+global.asistencia = 'Wa.me/18059196237' //Dudas? escríbeme...
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -164,8 +185,8 @@ global.exito = eg
 
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
-global.wm = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 : 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
-global.igfg = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
+global.wm = 'Hidayat Store - Marketing Agency'
+global.igfg = 'Hidayat Store - Marketing Agency'
 global.wait = '*⌛ _Cargando | Charging..._ ▬▭▭▭▭▭▭*'
 global.waitt = '*⌛ _Cargando | Charging..._ ▬▬▭▭▭*'
 global.waittt = '*⌛ _Cargando | Charging..._ ▬▬▬▬▭▭*'
@@ -202,6 +223,13 @@ global.img9 = 'https://i.imgur.com/xfUEdDb.jpeg'
 global.img10 = 'https://i.imgur.com/DvHoMc3.jpg'
 global.img11 = 'https://i.imgur.com/5Q1MqGD.jpg'
 global.img12 = 'https://i.imgur.com/vWnsjh8.jpg'
+global.img13 = 'https://i.imgur.com/pCfFOgw.jpeg'
+global.img14 = 'https://i.imgur.com/knBDWRA.jpeg'
+global.img15 = 'https://i.imgur.com/QrkkKx7.jpeg'
+
+global.redesMenu = [nna, nn, nnn, nnnt, nnntt, nnnttt, md, ig, paypal, yt]
+global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15]
+global.gataVidMenu = ['./media/menus/Menuvid1.mp4', './media/menus/Menuvid2.mp4', './media/menus/Menuvid3.mp4']
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -260,87 +288,83 @@ global.rpg = {
     string = string.toLowerCase()
     let emot = {
       level: '🧬 Nivel : Level',
-      limit: '💎 Diamante : Diamond',
-      exp: '⚡ Experiencia : Exp',
+      limit: lenguajeGB.eDiamante(),
+      exp: lenguajeGB.eExp(),
       bank: '🏦 Banco : Bank',
-      diamond: '💎+ Diamante+ : Diamond+',
+      diamond: lenguajeGB.eDiamantePlus(),
       health: '❤️ Salud : Health',
-      kyubi: '🌀 Magia : Magic',
-      joincount: '🪙 Token',
-      emerald: '💚 Esmeralda : Emerald',
-      stamina: '✨ Energía : Energy',
+      kyubi: lenguajeGB.eMagia(),
+      joincount: lenguajeGB.eToken(),
+      emerald: lenguajeGB.eEsmeralda(),
+      stamina: lenguajeGB.eEnergia(),
       role: '💪 Rango | Role',
       premium: '🎟️ Premium',
       pointxp: '📧 Puntos Exp : Point Xp',
-      gold: '👑 Oro : Gold',
+      gold: lenguajeGB.eOro(),
       
-      trash: '🗑 Basura : Trash',
+      trash: lenguajeGB.eBasura(),
       crystal: '🔮 Cristal : Crystal',
       intelligence: '🧠 Inteligencia : Intelligence',
-      string: '🕸️ Cuerda : Cuerda',
+      string: lenguajeGB.eCuerda(),
       keygold: '🔑 Llave de Oro : Key Gold',
       keyiron: '🗝️ Llave de Hierro : Key Iron',
-      emas: '🪅 Piñata : Doll',
+      emas: lenguajeGB.ePinata(),
       fishingrod: '🎣 Caña de Pescar : Fishing Rod',
       gems: '🍀 Gemas : Gemas',
       magicwand: '⚕️ Varita Mágica : Magic Wand',
       mana: '🪄 Hechizo : Spell',
       agility: '🤸‍♂️ Agilidad : Agility',
       darkcrystal: '♠️ Cristal Oscuro : Dark Glass',
-      iron: '⛓️ Hierro : Iron',
-      rock: '🪨 Roca : Rock',
-      potion: '🥤 Poción : Potion',
+      iron: lenguajeGB.eHierro(),
+      rock: lenguajeGB.eRoca(),
+      potion: lenguajeGB.ePocion(),
       superior: '💼 Superior : Superior',
       robo: '🚔 Robo : Robo',
       upgrader: '🧰 Aumentar Mejora : Upgrade',
-      wood: '🪵 Madera : Wood',
+      wood: lenguajeGB.eMadera(),
       
       strength: '🦹‍ ♀️ Fuerza : Strength',
       arc: '🏹 Arco : Arc',
       armor: '🥼 Armadura : Armor',
       bow: '🏹 Super Arco : Super Bow',
       pickaxe: '⛏️ Pico : Peak',
-      sword: '⚔️ Espada : Sword',
+      sword: lenguajeGB.eEspada(),
       
-      common: '📦 Caja Común : Common Box',
-      uncoommon: '🥡 Caja Poco Común : Uncommon',
-      mythic: '🗳️ Caja Mítica : Mythic Box',
-      legendary: '🎁 Caja Legendaria : Legendary Box',
-      petFood: '🍖 Alimento para Mascota : Pet Food',
-      pet: '🍱 Caja para Mascota : Pet Box',
+      common: lenguajeGB.eCComun(),
+      uncoommon: lenguajeGB.ePComun(),
+      mythic: lenguajeGB.eCMistica(),
+      legendary: lenguajeGB.eClegendaria(),
+      petFood: lenguajeGB.eAMascots(), //?
+      pet: lenguajeGB.eCMascota(),//?
       
-      bibitanggur: '🍇 Semilla de Uva : Grapeseed',
-      bibitapel: '🍎 Semilla de Manzana : Apple Seed',
-      bibitjeruk: '🍊 Semillas de naranja : Orange Seeds',
-      bibitmangga: '🥭 Semilla de Mango : Mango Seed',
-      bibitpisang: '🍌 Semillas de Plátano : Banana Seeds',
+      bibitanggur: lenguajeGB.eSUva(), bibitapel: lenguajeGB.eSManzana(), bibitjeruk: lenguajeGB.eSNaranja(), bibitmangga: lenguajeGB.eSMango(), bibitpisang: lenguajeGB.eSPlatano(),
       
       ayam: '🐓 Pollo : Chicken',
       babi: '🐖 Puerco : Pig',
       Jabali: '🐗 Jabalí : Wild Boar',
       bull: '🐃 Toro : Bull',    
       buaya: '🐊 Cocodrilo : Alligator',    
-      cat: '🐈 Gato : Cat',      
-      centaur: '🐐 Centauro : Centaur',
+      cat: lenguajeGB.eGato(),    
+      centaur: lenguajeGB.eCentauro(),
       chicken: '🐓 Pollo : Chicken',
       cow: '🐄 Vaca : Cow', 
-      dog: '🐕 Perro : Dog',
-      dragon: '🐉 Dragón : Dragon',
+      dog: lenguajeGB.ePerro(),
+      dragon: lenguajeGB.eDragon(),
       elephant: '🐘 Elefante : Elephant',
-      fox: '🦊 Zorro : Fox',
+      fox: lenguajeGB.eZorro(),
       giraffe: '🦒 Jirafa : Giraffe',
-      griffin: '🦅 Ave : Griffin', //Mascota : Griffin',
-      horse: '🐎 Caballo : Horse',
+      griffin: lenguajeGB.eAve(), //Mascota : Griffin',
+      horse: lenguajeGB.eCaballo(),
       kambing: '🐐 Cabra : Goat',
       kerbau: '🐃 Búfalo : Buffalo',
       lion: '🦁 León : Lion',
-      money: '🐱 GataCoins : CatCoins',
+      money: lenguajeGB.eGataCoins(),
       monyet: '🐒 Mono : Monkey',
       panda: '🐼 Panda',
       snake: '🐍 Serpiente : Snake',
       phonix: '🕊️ Fénix : Phoenix',
       rhinoceros: '🦏 Rinoceronte : Rhinoceros',
-      wolf: '🐺 Lobo : Wolf',
+      wolf: lenguajeGB.eLobo(),
       tiger: '🐅 Tigre : Tiger',
       cumi: '🦑 Calamar : Squid',
       udang: '🦐 Camarón : Shrimp',
@@ -360,96 +384,30 @@ global.rpgg = { //Solo emojis
   emoticon(string) {
     string = string.toLowerCase()
     let emott = {
-      level: '🧬',
-      limit: '💎',
-      exp: '⚡',
-      bank: '🏦',
-      diamond: '💎+',
-      health: '❤️',
-      kyubi: '🌀',
-      joincount: '🪙',
-      emerald: '💚',
-      stamina: '✨',
-      role: '💪',
-      premium: '🎟️',
-      pointxp: '📧',
-      gold: '👑',
+      level: '🧬', limit: '💎', exp: '⚡', bank: '🏦',
+      diamond: '💎+', health: '❤️', kyubi: '🌀', joincount: '🪙',
+      emerald: '💚', stamina: '✨', role: '💪', premium: '🎟️',
+      pointxp: '📧', gold: '👑',
       
-      trash: '🗑',
-      crystal: '🔮',
-      intelligence: '🧠',
-      string: '🕸️',
-      keygold: '🔑',
-      keyiron: '🗝️',
-      emas: '🪅',
-      fishingrod: '🎣',
-      gems: '🍀',
-      magicwand: '⚕️',
-      mana: '🪄',
-      agility: '🤸‍♂️',
-      darkcrystal: '♠️',
-      iron: '⛓️',
-      rock: '🪨',
-      potion: '🥤',
-      superior: '💼',
-      robo: '🚔',
-      upgrader: '🧰',
-      wood: '🪵',
+      trash: '🗑', crystal: '🔮', intelligence: '🧠', string: '🕸️', keygold: '🔑',
+      keyiron: '🗝️', emas: '🪅', fishingrod: '🎣', gems: '🍀', magicwand: '⚕️',
+      mana: '🪄', agility: '🤸‍♂️', darkcrystal: '♠️', iron: '⛓️', rock: '🪨',
+      potion: '🥤', superior: '💼', robo: '🚔', upgrader: '🧰', wood: '🪵',
       
-      strength: '🦹‍ ♀️',
-      arc: '🏹',
-      armor: '🥼',
-      bow: '🏹',
-      pickaxe: '⛏️',
-      sword: '⚔️',
+      strength: '🦹‍ ♀️', arc: '🏹', armor: '🥼', bow: '🏹', pickaxe: '⛏️', sword: '⚔️',
       
-      common: '📦',
-      uncoommon: '🥡',
-      mythic: '🗳️',
-      legendary: '🎁',
-      petFood: '🍖',
-      pet: '🍱',
+      common: '📦', uncoommon: '🥡', mythic: '🗳️', legendary: '🎁', petFood: '🍖', pet: '🍱',
       
-      bibitanggur: '🍇',
-      bibitapel: '🍎',
-      bibitjeruk: '🍊',
-      bibitmangga: '🥭',
-      bibitpisang: '🍌',
+      bibitanggur: '🍇', bibitapel: '🍎', bibitjeruk: '🍊', bibitmangga: '🥭', bibitpisang: '🍌',
       
-      ayam: '🐓',
-      babi: '🐖',
-      Jabali: '🐗',
-      bull: '🐃',    
-      buaya: '🐊',    
-      cat: '🐈',      
-      centaur: '🐐',
-      chicken: '🐓',
-      cow: '🐄', 
-      dog: '🐕',
-      dragon: '🐉',
-      elephant: '🐘',
-      fox: '🦊',
-      giraffe: '🦒',
-      griffin: '🦅', //Mascota : Griffin',
-      horse: '🐎',
-      kambing: '🐐',
-      kerbau: '🐃',
-      lion: '🦁',
-      money: '🐱',
-      monyet: '🐒',
-      panda: '🐼',
-      snake: '🐍',
-      phonix: '🕊️',
-      rhinoceros: '🦏',
-      wolf: '🐺',
-      tiger: '🐅',
-      cumi: '🦑',
-      udang: '🦐',
-      ikan: '🐟',
+      ayam: '🐓', babi: '🐖', Jabali: '🐗', bull: '🐃', buaya: '🐊', cat: '🐈',      
+      centaur: '🐐', chicken: '🐓', cow: '🐄', dog: '🐕', dragon: '🐉', elephant: '🐘',
+      fox: '🦊', giraffe: '🦒', griffin: '🦅', //Mascota : Griffin',
+      horse: '🐎', kambing: '🐐', kerbau: '🐃', lion: '🦁', money: '🐱', monyet: '🐒', panda: '🐼',
+      snake: '🐍', phonix: '🕊️', rhinoceros: '🦏',
+      wolf: '🐺', tiger: '🐅', cumi: '🦑', udang: '🦐', ikan: '🐟',
       
-      fideos: '🍝',
-      ramuan: '🧪',
-      knife: '🔪'
+      fideos: '🍝', ramuan: '🧪', knife: '🔪'
     }
     let results = Object.keys(emott).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
     if (!results.length) return ''
@@ -462,83 +420,35 @@ global.rpgshop = { //Tienda
   emoticon(string) {
     string = string.toLowerCase()
     let emottt = {
-      exp: '⚡ Experiencia : Exp',
-      limit: '💎 Diamante : Diamond',
-      diamond: '💎+ Diamante+ : Diamond+',
-      joincount: '🪙 Token',
-      emerald: '💚 Esmeralda : Emerald',
-      berlian: '♦️ Joya : Ruby',
-      kyubi: '🌀 Magia : Magic',
-      gold: '👑 Oro : Gold',
-      money: '🐱 GataCoins : CatCoins',
-      tiketcoin: '🎫 Gata Tickers',
-      stamina: '✨ Energía : Energy',
+      exp: lenguajeGB.eExp(), limit: lenguajeGB.eDiamante(), diamond: lenguajeGB.eDiamantePlus(), joincount: lenguajeGB.eToken(),
+      emerald: lenguajeGB.eEsmeralda(), berlian: lenguajeGB.eJoya(), kyubi: lenguajeGB.eMagia(), gold: lenguajeGB.eOro(),
+      money: lenguajeGB.eGataCoins(), tiketcoin: lenguajeGB.eGataTickers(), stamina: lenguajeGB.eEnergia(),
             
-      potion: '🥤 Poción : Potion',
-      aqua: '💧 Agua : Water',
-      trash: '🗑 Basura : Trash',
-      wood: '🪵 Madera : Wood',
-      rock: '🪨 Roca : Rock',
-      batu: '🥌 Piedra : Stone',
-      string: '🕸️ Cuerda : Cuerda',
-      iron: '⛓️ Hierro : Iron',
-      coal: '⚱️ Carbón : Coal',
-      botol: '🍶 Botella : Bottle',
-      kaleng: '🥫 Lata : Can',
-      kardus: '🪧 Cartón : Paperboard',
+      potion: lenguajeGB.ePocion(), aqua: lenguajeGB.eAgua(), trash: lenguajeGB.eBasura(), wood: lenguajeGB.eMadera(),
+      rock: lenguajeGB.eRoca(), batu: lenguajeGB.ePiedra(), string: lenguajeGB.eCuerda(), iron: lenguajeGB.eHierro(),
+      coal: lenguajeGB.eCarbon(), botol: lenguajeGB.eBotella(), kaleng: lenguajeGB.eLata(), kardus: lenguajeGB.eCarton(),
       
-      eleksirb: '💡 Electricidad : Electricity',
-      emasbatang: '〽️ Barra de Oro : Gold bar',
-      emasbiasa: '🧭 Oro Común : Common Gold',
-      rubah: '🦊🌫️ Zorro Grande : Big Fox',
-      sampah: '🗑🌫️ Super Basura : Big Trash',
-      serigala: '🐺🌫️ Super Lobo : Big Wolf',
-      kayu: '🛷 Super Madera : Super Wood',
-      sword: '⚔️ Espada : Sword',
-      umpan: '🪱 Carnada : Bait', 
-      healtmonster: '💵 Billetes : Fare',
-      emas: '🪅 Piñata : Doll',
-      pancingan: '🪝 Gancho : Hook',
-      pancing: '🎣 Caña de Pescar : Fishing Rod',
+      eleksirb: lenguajeGB.eEletric(), emasbatang: lenguajeGB.eBarraOro(), emasbiasa: lenguajeGB.eOroComun(), rubah: lenguajeGB.eZorroG(),
+      sampah: lenguajeGB.eBasuraG(), serigala: lenguajeGB.eLoboG(), kayu: lenguajeGB.eMaderaG(), sword: lenguajeGB.eEspada(),
+      umpan: lenguajeGB.eCarnada(), healtmonster: lenguajeGB.eBillete(), emas: lenguajeGB.ePinata(), pancingan: lenguajeGB.eGancho(),
+      pancing: lenguajeGB.eCanaPescar(),
        
-      common: '📦 Caja Común : Common Box',
-      uncoommon: '🥡 Caja Poco Común : Uncommon',
-      mythic: '🗳️ Caja Mítica : Mythic Box',
-      pet: '📫 Caja de Mascotas : Pet Box',//?
-      gardenboxs: '💐 Caja de Jardinería : Garden boxs',//?
-      legendary: '🎁 Caja Legendaria : Legendary Box',
+      common: lenguajeGB.eCComun(), uncoommon: lenguajeGB.ePComun(), mythic: lenguajeGB.eCMistica(),
+      pet: lenguajeGB.eCMascota(),//?
+      gardenboxs: lenguajeGB.eCJardineria(),//?
+      legendary: lenguajeGB.eClegendaria(),
       
-      anggur: '🍇 Uva : Grape',
-      apel: '🍎 Manzana : Apple',
-      jeruk: '🍊 Naranja : Orange',
-      mangga: '🥭 Mango',
-      pisang: '🍌 Platano : Banana',
+      anggur: lenguajeGB.eUva(), apel: lenguajeGB.eManzana(), jeruk: lenguajeGB.eNaranja(), mangga: lenguajeGB.eMango(), pisang: lenguajeGB.ePlatano(),
       
-      bibitanggur: '🌾🍇 Semillas de uva : Grape Seeds',
-      bibitapel: '🌾🍎 Semillas de manzana : Apple seeds',
-      bibitjeruk: '🌾🍊 Semillas de naranja : Orange Seeds',
-      bibitmangga: '🌾🥭 Semillas de Mango : Mango Seeds',
-      bibitpisang: '🌾🍌 Semillas de plátano : Banana Seeds',
+      bibitanggur: lenguajeGB.eSUva(), bibitapel: lenguajeGB.eSManzana(), bibitjeruk: lenguajeGB.eSNaranja(), bibitmangga: lenguajeGB.eSMango(), bibitpisang: lenguajeGB.eSPlatano(),
       
-      centaur: '🐐 Centauro : Centaur',
-      griffin: '🦅 Ave : Griffin',
-      kucing: '🐈 Gato : Cat',
-      naga: '🐉 Dragón : Dragon',
-      fox: '🦊 Zorro : Fox',
-      kuda: '🐎 Caballo : Horse',
-      phonix: '🕊️ Fénix : Phoenix',
-      wolf: '🐺 Lobo : Wolf',
-      anjing: '🐶 Perro : Dog',
-      //gardenboc:
-      //ketake:
-      //koinexpg: 
-      petFood: '🍖 Alimento para Mascota : Pet Food', //?
-      makanancentaur: '🐐🥩 Comida de Centauro : Centauro Food',
-      makanangriffin: '🦅🥩 Comida de Ave : Griffin Food',
-      makanankyubi: '🌀🥩 Comida Mágica : Magic Food',
-      makanannaga: '🐉🥩 Comida de Dragón : Dragon Food',
-      makananpet: '🍱🥩 Alimentos de mascotas: Pet Food',
-      makananphonix: '🕊️🥩 Comida de Fénix : Phoenix Food'  
+      centaur: lenguajeGB.eCentauro(), griffin: lenguajeGB.eAve(), kucing: lenguajeGB.eGato(), naga: lenguajeGB.eDragon(),
+      fox: lenguajeGB.eZorro(), kuda: lenguajeGB.eCaballo(), phonix: lenguajeGB.eFenix(), wolf: lenguajeGB.eLobo(),
+      anjing: lenguajeGB.ePerro(),
+ 
+      petFood: lenguajeGB.eAMascots(), //?
+      makanancentaur: lenguajeGB.eCCentauro(), makanangriffin: lenguajeGB.eCAve(),
+      makanankyubi: lenguajeGB.eCMagica(), makanannaga: lenguajeGB.eCDragon(), makananpet: lenguajeGB.eACaballo(), makananphonix: lenguajeGB.eCFenix()
     }
     let results = Object.keys(emottt).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
     if (!results.length) return ''
@@ -550,83 +460,33 @@ global.rpgshopp = { //Tienda
   emoticon(string) {
     string = string.toLowerCase()
     let emotttt = {
-      exp: '⚡',
-      limit: '💎',
-      diamond: '💎+',
-      joincount: '🪙',
-      emerald: '💚',
-      berlian: '♦️',
-      kyubi: '🌀',
-      gold: '👑',
-      money: '🐱',
-      tiketcoin: '🎫',
-      stamina: '✨',
+      exp: '⚡', limit: '💎', diamond: '💎+', joincount: '🪙',
+      emerald: '💚', berlian: '♦️', kyubi: '🌀', gold: '👑',
+      money: '🐱', tiketcoin: '🎫', stamina: '✨',
             
-      potion: '🥤',
-      aqua: '💧',
-      trash: '🗑',
-      wood: '🪵',
-      rock: '🪨',
-      batu: '🥌',
-      string: '🕸️',
-      iron: '⛓️',
-      coal: '⚱️',
-      botol: '🍶',
-      kaleng: '🥫',
-      kardus: '🪧',
+      potion: '🥤', aqua: '💧', trash: '🗑', wood: '🪵',
+      rock: '🪨', batu: '🥌', string: '🕸️', iron: '⛓️',
+      coal: '⚱️', botol: '🍶', kaleng: '🥫', kardus: '🪧',
       
-      eleksirb: '💡',
-      emasbatang: '〽️',
-      emasbiasa: '🧭',
-      rubah: '🦊🌫️',
-      sampah: '🗑🌫️',
-      serigala: '🐺🌫️',
-      kayu: '🛷',
-      sword: '⚔️',
-      umpan: '🪱', 
-      healtmonster: '💵',
-      emas: '🪅',
-      pancingan: '🪝',
+      eleksirb: '💡', emasbatang: '〽️', emasbiasa: '🧭', rubah: '🦊🌫️',
+      sampah: '🗑🌫️', serigala: '🐺🌫️', kayu: '🛷', sword: '⚔️',
+      umpan: '🪱', healtmonster: '💵', emas: '🪅', pancingan: '🪝',
       pancing: '🎣',
        
-      common: '📦',
-      uncoommon: '🥡',
-      mythic: '🗳️',
+      common: '📦', uncoommon: '🥡', mythic: '🗳️',
       pet: '📫',//?
       gardenboxs: '💐',//?
       legendary: '🎁',
       
-      anggur: '🍇',
-      apel: '🍎',
-      jeruk: '🍊',
-      mangga: '🥭',
-      pisang: '🍌',
+      anggur: '🍇', apel: '🍎', jeruk: '🍊', mangga: '🥭', pisang: '🍌',
       
-      bibitanggur: '🌾🍇',
-      bibitapel: '🌾🍎',
-      bibitjeruk: '🌾🍊',
-      bibitmangga: '🌾🥭',
-      bibitpisang: '🌾🍌',
+      bibitanggur: '🌾🍇', bibitapel: '🌾🍎', bibitjeruk: '🌾🍊', bibitmangga: '🌾🥭', bibitpisang: '🌾🍌',
       
-      centaur: '🐐',
-      griffin: '🦅',
-      kucing: '🐈',
-      naga: '🐉',
-      fox: '🦊',
-      kuda: '🐎',
-      phonix: '🕊️',
-      wolf: '🐺',
-      anjing: '🐶',
-      //gardenboc:
-      //ketake:
-      //koinexpg: 
+      centaur: '🐐', griffin: '🦅', kucing: '🐈', naga: '🐉', fox: '🦊', kuda: '🐎', phonix: '🕊️', wolf: '🐺', anjing: '🐶',
+       
       petFood: '🍖', //?
-      makanancentaur: '🐐🥩',
-      makanangriffin: '🦅🥩',
-      makanankyubi: '🌀🥩',
-      makanannaga: '🐉🥩',
-      makananpet: '🍱🥩',
-      makananphonix: '🕊️🥩'  
+      makanancentaur: '🐐🥩', makanangriffin: '🦅🥩', makanankyubi: '🌀🥩', makanannaga: '🐉🥩',
+      makananpet: '🍱🥩', makananphonix: '🕊️🥩'  
     }
     let results = Object.keys(emotttt).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
     if (!results.length) return ''
@@ -640,19 +500,3 @@ watchFile(file, () => {
   console.log(chalk.redBright("Update 'config.js'"))
   import(`${file}?update=${Date.now()}`)
 })
-
-
-/*/*console.log(`╭──────────── ✦ 𓃠
-┊● ${chalk.redBright('%s')}
-┊● ${chalk.black(chalk.bgYellow('%s'))}
-┊● ${chalk.black(chalk.bgGreen('%s'))}
-┊● ${chalk.magenta('%s [%s %sB]')}
-┊● ${chalk.green('%s')}
-┊● ${chalk.yellow('%s%s')}
-┊● ${chalk.green('%s')}
-┊● ${chalk.black(chalk.bgYellow('%s'))}
-╰──────────── ✦ 𓃠`.trim(),
-console.log(`╭──────────── ✦ 𓃠
-┊ ${chalk.redBright('%s')} ${chalk.black(chalk.bgYellow('%s'))} ${chalk.black(chalk.bgGreen('%s'))} ${chalk.magenta('%s [%s %sB]')}
-┊ ${chalk.green('%s')} ${chalk.yellow('%s%s')} ${chalk.blueBright('-')} ${chalk.green('%s')} ${chalk.cyanBright(chalk.blueBright('%s'))}
-╰──────────── ✦ 𓃠`.trim(),*/
